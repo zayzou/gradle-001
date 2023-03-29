@@ -8,6 +8,9 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
+test {
+    useJUnitPlatform()
+}
 jar {
     manifest {
         attributes('Main-Class': 'com.zayzou.SayHello')
